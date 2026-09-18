@@ -1,0 +1,29 @@
+# Godot
+.godot/
+*.import
+*.tres
+*.scn
+.DS_Store
+user_data/
+.vscode/
+
+# Build output
+build/
+bin/
+dist/
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+*.bak

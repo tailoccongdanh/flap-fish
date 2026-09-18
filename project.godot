@@ -1,0 +1,20 @@
+[gd_project]
+
+config_version=5
+name="Flap Fish"
+description="Cá vượt thác - A salmon journey upstream"
+
+[application]
+
+config/name="Flap Fish"
+config/version="1.0.0"
+run/main_scene="res://scenes/main.tscn"
+
+[physics]
+
+common/physics_engine_2d="GodotPhysics2D"
+
+[rendering]
+
+textures/canvas_textures/default_canvas_texture=SubResource("CanvasTexture_p8rh8")
+

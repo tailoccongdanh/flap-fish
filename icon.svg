@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1a5f7a"/>
+  
+  <!-- Water waves -->
+  <path d="M 0 100 Q 50 80 100 100 T 200 100 T 300 100 T 400 100 T 512 100 L 512 0 L 0 0 Z" fill="#2a7fa0" opacity="0.5"/>
+  <path d="M 0 450 Q 50 430 100 450 T 200 450 T 300 450 T 400 450 T 512 450 L 512 512 L 0 512 Z" fill="#0a3f5a" opacity="0.5"/>
+  
+  <!-- Fish body (main circle) -->
+  <circle cx="256" cy="256" r="100" fill="#ff9800"/>
+  
+  <!-- Fish head highlight -->
+  <ellipse cx="200" cy="230" rx="40" ry="50" fill="#ffb74d" opacity="0.7"/>
+  
+  <!-- Fish eye -->
+  <circle cx="180" cy="240" r="15" fill="white"/>
+  <circle cx="185" cy="238" r="8" fill="black"/>
+  <circle cx="187" cy="236" r="3" fill="white"/>
+  
+  <!-- Fish tail - left -->
+  <polygon points="340,256 400,220 420,200 420,240 400,260" fill="#ff9800"/>
+  <polygon points="340,256 400,290 420,310 420,270 400,250" fill="#ff9800"/>
+  <polygon points="340,256 420,240 420,270" fill="#ffb74d" opacity="0.6"/>
+  
+  <!-- Fish fin - top -->
+  <ellipse cx="256" cy="140" rx="25" ry="50" fill="#e74c3c" transform="rotate(-30 256 140)"/>
+  
+  <!-- Fish fin - bottom -->
+  <ellipse cx="256" cy="370" rx="20" ry="40" fill="#e74c3c" transform="rotate(30 256 370)"/>
+  
+  <!-- Stripes for detail -->
+  <line x1="200" y1="256" x2="240" y2="256" stroke="#ffc107" stroke-width="4" opacity="0.5"/>
+  <line x1="210" y1="220" x2="240" y2="240" stroke="#ffc107" stroke-width="3" opacity="0.5"/>
+  <line x1="210" y1="290" x2="240" y2="270" stroke="#ffc107" stroke-width="3" opacity="0.5"/>
+  
+  <!-- Bubbles around fish -->
+  <circle cx="120" cy="150" r="8" fill="#4db8ff" opacity="0.6"/>
+  <circle cx="380" cy="200" r="6" fill="#4db8ff" opacity="0.5"/>
+  <circle cx="100" cy="350" r="7" fill="#4db8ff" opacity="0.5"/>
+  <circle cx="400" cy="350" r="5" fill="#4db8ff" opacity="0.4"/>
+</svg>
