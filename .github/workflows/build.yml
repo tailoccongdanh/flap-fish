@@ -1,0 +1,38 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Godot v4.1.3
+      uses: chickensoft-games/setup-godot@v1
+      with:
+        version: 4.1.3
+        use-dotnet: false
+    
+    - name: Create build output directory
+      run: mkdir -p build
+    
+    - name: Export to Android (APK)
+      run: godot --headless --export-release "Android" build/app-release.apk || true
+      continue-on-error: true
+    
+    - name: List build output
+      run: ls -lah build/ || echo "Build directory empty"
+    
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: flap-fish-apk
+        path: build/
+        retention-days: 30
